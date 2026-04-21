@@ -1,0 +1,181 @@
+/* FONDO MÁS PRO */
+body {
+  background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
+    url("/imagen.png") no-repeat center center;
+
+  background-size: cover;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0;
+  padding: 20px;
+  color: white;
+
+  /* EVITAR ZOOM Y SELECCIÓN */
+
+  touch-action: manipulation;
+  user-select: none;
+
+}
+
+/* TITULO */
+.titulo {
+  font-size: 42px;
+  color: #22c55e;
+  text-shadow: 0 0 15px #22c55e;
+}
+
+/* AUTOR */
+.nombreAutor {
+  font-size: 16px;
+  color: #94a3b8;
+}
+
+/* PANEL */
+.panel {
+  margin: 15px 0;
+  font-size: 20px;
+  display: flex;
+  gap: 30px;
+
+  background: rgba(0,0,0,0.5);
+  padding: 10px 20px;
+  border-radius: 10px;
+
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+/* CANVAS */
+canvas {
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 0 25px rgba(34,197,94,0.5),
+    inset 0 0 15px rgba(255,255,255,0.1);
+
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+/* CONTROLES COMO CRUZ (MEJOR UX) */
+.controles {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 60px 60px 60px;
+  grid-template-rows: 60px 60px 60px;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* POSICIÓN DE BOTONES */
+#btnArriba {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#btnIzquierda {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#btnAbajo {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#btnDerecha {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+/* BOTONES GAMER */
+button {
+
+  font-size: 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+  color: white;
+
+  background: linear-gradient(145deg, #111827, #020617);
+
+  box-shadow:
+    0 5px 0 #000,
+    0 0 10px rgba(34,197,94,0.5);
+
+  transition: all 0.2s ease;
+}
+
+/* HOVER */
+button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow:
+    0 8px 0 #000,
+    0 0 20px #22c55e;
+}
+
+/* CLICK EFECTO TECLA */
+button:active {
+  transform: translateY(4px);
+  box-shadow:
+    0 2px 0 #000,
+    0 0 10px #22c55e inset;
+}
+
+/* BOTÓN REINICIAR PRO */
+#reiniciarJuego {
+  margin-top: 20px;
+  padding: 14px 28px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+
+  color: white;
+
+  /* GRADIENTE LLAMATIVO */
+  background: linear-gradient(145deg, #000, #111827);
+
+  /* EFECTO TECLA */
+  box-shadow:
+    0 6px 0 #000,
+    0 0 15px #22c55e;
+
+  transition: all 0.2s ease;
+}
+
+/* HOVER */
+#reiniciarJuego:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow:
+    0 10px 0 #000,
+    0 0 25px #22c55e;
+}
+
+/* CLICK */
+#reiniciarJuego:active {
+  transform: translateY(5px);
+  box-shadow:
+    0 2px 0 #000,
+    inset 0 0 10px rgba(0,0,0,0.8);
+}
+
+/* MENSAJE */
+#mensaje {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 15px;
+
+  text-shadow: 0 0 10px white;
+}
+button.activo {
+  transform: translateY(4px);
+  box-shadow:
+    0 2px 0 #000,
+    inset 0 0 10px rgba(0,0,0,0.8);
+}

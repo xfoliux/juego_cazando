@@ -1,0 +1,4 @@
+agrega esta imagen de fondo imagen.png
+agrega estilo de acuerdo a la imagen
+
+crea un estilo a el canva tipo vidrio

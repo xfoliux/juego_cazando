@@ -1,0 +1,6 @@
+Actúa como diseñador grafico este es mi codigo html y css
+mejora los estilos y botones manteniendo el codigo base
+no hagas cambios en los div ni ids. mejora teclas o cambiar de lugar
+haciendolo mas dinamico el juego.
+
+puedo utilizar el teclado para jugar
